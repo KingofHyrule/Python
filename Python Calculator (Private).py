@@ -19,6 +19,7 @@ def kapat():
     exit()
 
 def topla():
+    Label(hesapmakinesi, text="", bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
     girilen_sayi_1 = sayi_gir_1.get()
     girilen_sayi_2 = sayi_gir_2.get()
     sonuc = float(girilen_sayi_1) + float(girilen_sayi_2)
@@ -26,6 +27,7 @@ def topla():
     Label(hesapmakinesi, text=sonuc, bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
 
 def cıkart():
+    Label(hesapmakinesi, text="", bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
     girilen_sayi_1 = sayi_gir_1.get()
     girilen_sayi_2 = sayi_gir_2.get()
     sonuc = float(girilen_sayi_1) - float(girilen_sayi_2)
@@ -33,6 +35,7 @@ def cıkart():
     Label(hesapmakinesi, text=sonuc, bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
 
 def carp():
+    Label(hesapmakinesi, text="", bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
     girilen_sayi_1 = sayi_gir_1.get()
     girilen_sayi_2 = sayi_gir_2.get()
     sonuc = float(girilen_sayi_1) * float(girilen_sayi_2)
@@ -40,6 +43,7 @@ def carp():
     Label(hesapmakinesi, text=sonuc, bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
 
 def bol():
+    Label(hesapmakinesi, text="", bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
     girilen_sayi_1 = sayi_gir_1.get()
     girilen_sayi_2 = sayi_gir_2.get()
     sonuc = float(girilen_sayi_1) / float(girilen_sayi_2)

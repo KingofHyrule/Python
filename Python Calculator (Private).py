@@ -19,15 +19,13 @@ def kapat():
     exit()
 
 def topla():
-    Label(hesapmakinesi, text="", bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
     girilen_sayi_1 = sayi_gir_1.get()
     girilen_sayi_2 = sayi_gir_2.get()
     sonuc = float(girilen_sayi_1) + float(girilen_sayi_2)
     Label(hesapmakinesi, text="Sonuç:", bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=0, sticky=W)
     Label(hesapmakinesi, text=sonuc, bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
 
-def cıkart():
-    Label(hesapmakinesi, text="", bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
+def cikar():
     girilen_sayi_1 = sayi_gir_1.get()
     girilen_sayi_2 = sayi_gir_2.get()
     sonuc = float(girilen_sayi_1) - float(girilen_sayi_2)
@@ -35,7 +33,6 @@ def cıkart():
     Label(hesapmakinesi, text=sonuc, bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
 
 def carp():
-    Label(hesapmakinesi, text="", bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
     girilen_sayi_1 = sayi_gir_1.get()
     girilen_sayi_2 = sayi_gir_2.get()
     sonuc = float(girilen_sayi_1) * float(girilen_sayi_2)
@@ -43,7 +40,6 @@ def carp():
     Label(hesapmakinesi, text=sonuc, bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
 
 def bol():
-    Label(hesapmakinesi, text="", bg="gray", fg="white", font="none 12 bold") .grid(row=6, column=5, sticky=W)
     girilen_sayi_1 = sayi_gir_1.get()
     girilen_sayi_2 = sayi_gir_2.get()
     sonuc = float(girilen_sayi_1) / float(girilen_sayi_2)
@@ -53,7 +49,7 @@ def bol():
 Button(hesapmakinesi, text="÷", width=15, command=bol) .grid(row=12, column=11, sticky=W)
 Button(hesapmakinesi, text="+", width=15, command=topla) .grid(row=3, column=11, sticky=W)
 Button(hesapmakinesi, text="x", width=15, command=carp) .grid(row=9, column=11, sticky=W)
-Button(hesapmakinesi, text="-", width=15, command=cıkart) .grid(row=6, column=11, sticky=W)
+Button(hesapmakinesi, text="-", width=15, command=cikar) .grid(row=6, column=11, sticky=W)
 Button(hesapmakinesi, text="Çıkış", width=15, command=kapat) .grid(row=2, column=11, sticky=W)
 
 hesapmakinesi.mainloop()
